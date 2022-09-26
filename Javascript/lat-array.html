@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nj = ["Bisnis sepeda motor","T.elektronika Industri" , "T.Instalasi Tenaga Listrik","T.Kendaraan Ringan","T.Pengelasan" ," RPL(Rekayasa Perangkat Lunak)" , "Kimia Industri" , "Perhotelan","Akuntansi dan Keuangan","Tata kelola perkantoran"];
+        var jml = nj.length;
+            for(let i = 0; i < nj.length; i++){
+                var no = i + 1;
+            document.write(no + "." + nj[i] +"<br>");
+        }
+        
+    </script>
+
+
+
+var bgColor = document.getElementById('bg-color');
+var txtColor = document.getElementById('text-color');
+
+bgColor.addEventListener("change", (event) => {
+    document.body.style.backgroundColor = bgColor.value;
+});
+
+txtColor.addEventListener("change", (event) => {
+    document.body.style.color = txtColor.value;
+});
+
+
+
+
+
+</body>
+</html>

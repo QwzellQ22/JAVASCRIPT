@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        button{
+            width: 100px;
+        }
+    </style>
+</head>
+<body >
+<h1 align="center" >Program Mencari Grade Nilai</h1>
+<hr>
+Input Nilai Anda
+<br>
+<input type="text" id="input">  
+<br>
+<br>
+<button onclick="Check()">Check</button> 
+<br> <br></br>
+<div>HASILNYA: <span id="grade"></span></div>
+
+<script>
+function Check(){
+    var p = document.getElementById("input").value;
+    var a = document.getElementById("grade");
+
+    if (  p >= 90 && <= 100){
+     a.innerHTML = "A";
+    } 
+    else if (p >=100){
+      a.innerHTML = "Hai!! Kamu dari planet mana?"
+    } 
+    else if (p >= 80){
+        a.innerHTML = "B";
+    }
+    else if(p <= 75){
+        a.innerHTML = "C ,hmm cukup baik semangat:)";
+    } else if (p <= 40){
+        a.innerHTML = "D , maaf kamu harus mengulangnya lagi:(";
+    }else{
+        a.innerHTML
+    }
+
+
+}
+</script>
+
+
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+</html>

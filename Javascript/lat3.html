@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+       #box{
+          width: 400px; height: 200px; 
+          margin-left: 50px;
+    } 
+    </style>
+</head>
+<body>
+    
+<div id="box"></div>
+<br><br>
+<button onclick="merah()">Tombol Merah</button>
+
+<button onclick=" biru()"> Tombol Biru </button>
+
+<button onclick="hijau()"> Tombol Hijau </button>
+
+<script>
+  
+
+
+ function merah()
+ {
+    var box = document.getElementById("box");
+    box.style.backgroundColor = "red";
+ }
+
+ function biru()
+ {
+    var box = document.getElementById("box");
+    box.style.backgroundColor = "blue";
+ }
+
+ function hijau()
+ {
+    var box = document.getElementById("box");
+    box.style.backgroundColor = "green";
+ }
+
+</script>
+
+
+</body>
+</html>

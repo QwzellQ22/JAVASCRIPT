@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasi warna</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    
+<p class="paragraf">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab maxime obcaecati aut laudantium recusandae repellat expedita, soluta nam explicabo officia? Rerum animi labore aut asperiores possimus cupiditate quas aliquid sit!</p>
+
+<p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellat minima rem nisi, laboriosam atque earum? Laudantium atque et reiciendis eum id similique incidunt perspiciatis unde sequi, vel explicabo? Quisquam!</p>
+
+<p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo error repudiandae odit. Exercitationem eligendi eum consequatur similique ullam. Amet exercitationem sequi necessitatibus odio architecto. Magnam dignissimos non modi eligendi! Dicta?
+
+</p>
+
+
+
+<script>
+
+var pg = document.getElementsByClassName("paragraf");
+
+console.log(pg);
+
+setInterval(function() {
+    pg[0].style.color = "red";
+    pg[1].style.color = "green";
+    pg[2].style.color = "blue";
+
+    setTimeout(function() {
+        pg[0].style.color = "#fff";
+        pg[1].style.color = "#fff";
+        pg[2].style.color = "#fff";
+    } , 500);
+},1100);
+</script>
+
+</body>
+</html>
